@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title" contenteditable="true">Hello World!</h1>
+    <div id="canvas-container">
+        <svg id="canvas" width="500" height="500" xmlns="http://www.w3.org/2000/svg" onload="makeDraggable(e)">
+            <rect class="static" x="20" y="60" width="10" height="10"/>
+            <rect draggable class="draggable" x="110" y="10" width="50" height="50"/>
+            <text id="name" x="20" y="35">my honest reaction</text>
+        </svg>
+    </div>
+    <pre id="console"></pre>
+</body>
+</html>
